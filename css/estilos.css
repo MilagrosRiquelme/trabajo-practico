@@ -1,0 +1,264 @@
+body {
+	background-color: red;
+	background-image: url(../imagenes/españa-reference.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100vw;
+	margin: 0%;
+	display: flex;
+	flex-direction: column;
+}
+.whatsapp {
+	position: fixed;
+	width: 3.68vw;
+	height: 7.61vh;
+	bottom: 1.52vh;
+	right: 0.73vw;
+	border-radius: 7.35vw;
+	text-align: center;
+}
+.movil {
+	display: none;
+}
+.tablet {
+	display: none;
+}
+.pc {
+	display: contents;
+}
+a:hover {
+	color: rgb(255, 255, 255);
+	transition: color 0.7s;
+}
+a img:hover{
+	transform: scale(1.1);
+	box-shadow: 0.15vw 0.15vw 0.3vw rgba(0, 0, 0, 0.3);
+}
+.all {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* HEADER */
+
+.header-img {
+	width: 3.67vw;
+	height: 7.61vh;
+	border-radius: 75%
+}
+.header-redes {
+	display: flex;
+	flex-wrap: nowrap;
+	align-content: flex-end;
+}
+.logo {
+	width: 7.35vw;
+	height: auto;
+}
+.header-padre {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #0002927c;
+}
+header {
+	flex-wrap: wrap;
+	width: 100vw;
+}
+.header-titulo {
+	font-family: 'Dela Gothic One', sans-serif;
+	text-align: center;
+}
+
+/* NAV */
+
+.nav-padre {
+	display: flex;
+	text-align: center;
+	margin-top: 7.61vh;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.boton {
+	font-family: 'Changa', sans-serif;
+	color: #E74C3C;
+	font-size: 4vh;
+	padding: 0.73vw;
+	text-decoration: none;
+	-webkit-border-radius: 2.05vw;
+	-moz-border-radius: 2.05vw;
+	border-radius: 2.05vw;
+	border: sólido #8f8f8f 0.15vw;
+}
+.boton:hover {
+    background: #34b5e893;
+	transition: all 0.7s;
+	transform: scale(1.5);
+	box-shadow:  0.29vw 0.29vw 0.59vw rgba(0, 0, 0, 0.3);
+}
+
+/* SECTION */
+
+section {
+	background-image: url(../imagenes/fondo_ingredientes.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-left: 1.84vh;
+	padding-right: 1.84vh;
+	padding-bottom: 7.61vh;
+}
+.titulo-pad {
+	color: #641E16;
+	text-align: center;
+	margin-top: 0.76vh;
+    margin-bottom: 0.76vh;
+	font-size: 11.41vh;
+	font-family: 'Mountains of Christmas', cursive;
+}
+.texto1 {
+	font-family: 'PT Sans Narrow', sans-serif;
+	text-align: justify;
+}
+.slistas {
+	color: #006868;
+	text-decoration: underline;
+	text-align: left;
+	margin-left: 25vw;
+	font-family: 'Lakki Reddy', serif;
+}
+.listas {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	margin-bottom: 4.56vh;
+	margin-left: 1.47vw;
+	font-size: 4vh;
+	font-style: oblique;
+}
+.texto2 {
+	font-family: 'Cookie', cursive;
+}
+.sp {
+	color: #5f0068;
+	text-decoration: underline;
+	text-align: left;
+	font-family: 'Lugrasimo', cursive;
+}
+.texto3 {
+	font-family: 'ZCOOL XiaoWei', sans-serif;
+}
+.pvideo {
+	display: flex;
+	justify-content: center;
+}
+
+/* ASIDE */
+
+.aside-padre {
+	margin-left: 2.2vw;
+}
+.aside-img {
+	text-align: center;
+	width: 100%;
+}
+.map+ {
+	width: 100%;
+}
+.aside-map {
+	margin-bottom: 7.61vh;
+}
+.smap {
+	color: #006868;
+	text-decoration: underline;
+	text-align: center;
+	margin-bottom: 1.84vh;
+	font-family: 'Aoboshi One', serif;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: #0002927c;
+	flex-wrap: wrap;
+	width: 100vw;
+}
+.footer-padre {
+	display: flex;
+	justify-content: space-around;
+}
+.footer-img {
+	width: 3.67vw;
+	height: 7.61vh;
+	border-radius: 75%
+}
+.footer-padre {
+	margin-top: 7.61vh;
+	align-items: center;
+}
+.footer-contacto {
+	font-family: 'Pixelify Sans', sans-serif;
+}
+.footer-redes {
+	display: flex;
+	flex-wrap: nowrap;
+	align-content: flex-end;
+}
+
+
+@media (max-width:  575px) {
+	/* GENERAL */
+
+	.movil {
+		display: flex;
+		font-size: xx-small;
+		justify-content: flex-end;
+	}
+	body {
+		flex-direction: column;
+	}
+	.all {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* NAV */
+
+	.nav-padre {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
+	.botones {
+		margin-top: 2.5vh;
+		width: 100vw;
+	}
+	.boton {
+		padding-left: 25vw;
+		padding-right: 25vw;
+		text-align: center;
+	}
+
+	/* ASIDE */
+
+	.aside-img {
+		display: none;
+	}
+
+}
+
+@media (max-width: 991px) {
+	.tablet {
+		display: flex;
+		justify-content: space-around;
+	}
+	.pc {
+		display: none;
+	}
+	body {
+		flex-direction: column;
+	}
+	.all {
+		display: flex;
+		justify-content: space-between;
+	}
+}
